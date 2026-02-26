@@ -3,7 +3,7 @@
   "displayName": "Vue File Analyzer",
   "description": "Sidebar Tree View showing structure of .vue files (imports, components, props, emits, data, computed, methods, watch, lifecycle, provide/inject)",
   "version": "0.1.0",
-  "publisher": "vue-analyzer",
+  "publisher": "you612",
   "icon": "resources/icon.png",
   "repository": {
     "type": "git",
