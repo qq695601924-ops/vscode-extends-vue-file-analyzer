@@ -1,0 +1,7 @@
+.vscode/**
+src/**
+.gitignore
+tsconfig.json
+**/*.map
+# 打包时必须包含 node_modules，否则扩展激活时会因找不到 @babel/parser、@vue/compiler-sfc 等依赖而失败，视图无法注册
+# node_modules/**
