@@ -1,62 +1,63 @@
 {
-  "name": "vue-file-analyzer",
-  "displayName": "Vue File Analyzer",
-  "description": "Sidebar Tree View showing structure of .vue files (imports, components, props, emits, data, computed, methods, watch, lifecycle, provide/inject)",
-  "version": "0.1.0",
-  "publisher": "you612",
-  "icon": "resources/icon.png",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/qq695601924-ops/vscode-extends-vue-file-analyzer.git"
-  },
-  "engines": {
-    "vscode": "^1.74.0"
-  },
-  "categories": [
-    "Other"
-  ],
-  "activationEvents": [
-    "onLanguage:vue",
-    "onView:vueAnalyzerTree"
-  ],
-  "main": "./out/extension.js",
-  "contributes": {
-    "views": {
-      "explorer": [
-        {
-          "id": "vueAnalyzerTree",
-          "name": "vue 文件快照"
-        }
-      ]
+    "name": "vue-file-analyzer",
+    "displayName": "Vue File Analyzer",
+    "description": "Sidebar Tree View showing structure of .vue files (imports, components, props, emits, data, computed, methods, watch, lifecycle, provide/inject)",
+    "version": "0.1.0",
+    "publisher": "you612",
+    "icon": "resources/icon.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/qq695601924-ops/vscode-extends-vue-file-analyzer.git"
     },
-    "commands": [
-      {
-        "command": "vueAnalyzer.goToSymbol",
-        "title": "Go to Symbol"
-      },
-      {
-        "command": "vueAnalyzer.refresh",
-        "title": "Refresh Vue File Structure"
-      }
-    ]
-  },
-  "scripts": {
-    "vscode:prepublish": "npm run compile",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./",
-    "lint": "eslint src --ext ts",
-    "build:icon": "node scripts/svg-to-png.js"
-  },
-  "devDependencies": {
-    "@types/babel__traverse": "^7.18.0",
-    "@types/node": "^20.10.0",
-    "@types/vscode": "^1.74.0",
-    "sharp": "^0.34.5",
-    "typescript": "^5.3.0"
-  },
-  "dependencies": {
-    "@babel/parser": "^7.23.0",
-    "@babel/traverse": "^7.23.0",
-    "@vue/compiler-sfc": "^3.4.0"
-  }
+    "engines": {
+        "vscode": "^1.74.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onLanguage:vue",
+        "onView:vueAnalyzerTree"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+        "views": {
+            "explorer": [
+                {
+                    "id": "vueAnalyzerTree",
+                    "name": "vue 文件快照"
+                }
+            ]
+        },
+        "commands": [
+            {
+                "command": "vueAnalyzer.goToSymbol",
+                "title": "Go to Symbol"
+            },
+            {
+                "command": "vueAnalyzer.refresh",
+                "title": "Refresh Vue File Structure"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "lint": "eslint src --ext ts",
+        "build:icon": "node scripts/svg-to-png.js"
+    },
+    "devDependencies": {
+        "@types/babel__traverse": "^7.18.0",
+        "@types/node": "^20.10.0",
+        "@types/vscode": "^1.74.0",
+        "sharp": "^0.34.5",
+        "typescript": "^5.3.0"
+    },
+    "dependencies": {
+        "@babel/parser": "^7.23.0",
+        "@babel/traverse": "^7.23.0",
+        "@vue/compiler-sfc": "^3.4.0"
+    },
+    "license": "MIT"
 }
